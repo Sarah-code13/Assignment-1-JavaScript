@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    padding: 20px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    margin: 10px;
+    padding: 10px 20px;
+
+}
+.section-1,.section-2,.section-3,.section-4,.section-5 {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 10px;
+}
+.display-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
