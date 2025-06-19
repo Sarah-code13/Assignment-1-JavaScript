@@ -1,21 +1,34 @@
 body {
     text-align: center;
     padding: 20px;
+    background-color: antiquewhite;
 }
 .box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 button {
     margin: 10px;
     padding: 10px 20px;
+    border-radius: 20%;
 
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .section-1,.section-2,.section-3,.section-4,.section-5 {
     width: 160px;
     height: 160px;
+    margin-top: 5px;
     margin-bottom: 10px;
+}
+.abajo {
+    margin-top: 30px;
 }
 .display-text {
     font-size: 1.2em;

@@ -7,14 +7,14 @@ const thirdImage = ["funny.jpg","scary.jpg","goofy.jpg","slimy.jpg","barking.jpg
 const fourthColumn = ["goat", "monkey", "fish","cow","frog","bug","worm"];
 const fourthImage = ["goat.jpg","monkey.jpg","fish.jpg","cow.jpg","frog.jpg","bug.jpg","worm.jpg"];
 const fifthColumn = ["on the moon.", "on the chair.","in my spaghetti.","in my soup.","on the grass","in my shoes."];
-const fifthImage = ["moon.jpg","chair.jpg","spaghetti.jpg","soup.jpg","grass.jpg","shoes.jpg"]
+const fifthImage = ["moon.jpg","chair.jpg","spaghetti.jpg","soup.jpg","grass.jpg","shoe.jpg"]
 const buttons = document.querySelectorAll("button")
 const displayText = document.querySelector(".display-text");
 const index = [0,0,0,0,0];
 const columns = [firstColumn,secondColumn,thirdColumn,fourthColumn,fifthColumn];
 const AllImages = [firstImage,secondImage,thirdImage,fourthImage,fifthImage];
 const images = document.querySelectorAll("img");
-const surprise = document.querySelector(".surprise")
+const surprise = document.querySelector(".Surprise")
 
 buttons.forEach((button, i) => {
     if (i < 5) {
@@ -30,7 +30,7 @@ buttons.forEach((button, i) => {
 })
 surprise.addEventListener("click", () => {
     for (let i = 0; i < columns.length; i++) {
-        index[i] = Math.random() * columns[i].length;
+        index[i] = Math.floor(Math.random() * columns[i].length);
         images[i].src = "images/" + AllImages[i][index[i]];
     }
     textDisplayed();
